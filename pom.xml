@@ -8,8 +8,8 @@
     <groupId>com.example</groupId>
     <artifactId>sde-newsletter-campaign-manager</artifactId>
     <version>1.0.0</version>
-    <name>Newsletter & Email Campaign Manager</name>
-    <description>Spring Boot + MongoDB + JWT + Mail Newsletter & Email Campaign Manager</description>
+    <name>Newsletter and Email Campaign Manager</name>
+    <description>Spring Boot + MongoDB + JWT + Mail Newsletter and Email Campaign Manager</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
