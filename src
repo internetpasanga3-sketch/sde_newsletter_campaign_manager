@@ -1,54 +1,74 @@
 src/
- └─ main/
-    ├─ java/
-    │  └─ com/
-    │     └─ example/
-    │        └─ inventoryapi/
-    │           ├─ InventoryOrderApiApplication.java
-    │           ├─ config/
-    │           │   ├─ SecurityConfig.java
-    │           │   └─ OpenApiConfig.java
-    │           ├─ controller/
-    │           │   ├─ AuthController.java
-    │           │   ├─ CategoryController.java
-    │           │   ├─ AdminProductController.java
-    │           │   ├─ ProductController.java
-    │           │   └─ OrderController.java
-    │           ├─ dto/
-    │           │   ├─ AuthResponse.java
-    │           │   ├─ LoginRequest.java
-    │           │   ├─ RegisterRequest.java
-    │           │   ├─ CategoryRequest.java
-    │           │   ├─ ProductRequest.java
-    │           │   ├─ PlaceOrderRequest.java
-    │           │   └─ PlaceOrderItemRequest.java
-    │           ├─ entity/
-    │           │   ├─ Role.java
-    │           │   ├─ ProductStatus.java
-    │           │   ├─ OrderStatus.java
-    │           │   ├─ User.java
-    │           │   ├─ Category.java
-    │           │   ├─ Product.java
-    │           │   ├─ Order.java
-    │           │   └─ OrderItem.java
-    │           ├─ exception/
-    │           │   ├─ ResourceNotFoundException.java
-    │           │   ├─ InsufficientStockException.java
-    │           │   └─ GlobalExceptionHandler.java
-    │           ├─ repository/
-    │           │   ├─ UserRepository.java
-    │           │   ├─ CategoryRepository.java
-    │           │   ├─ ProductRepository.java
-    │           │   └─ OrderRepository.java
-    │           ├─ security/
-    │           │   ├─ JwtService.java
-    │           │   ├─ JwtAuthenticationFilter.java
-    │           │   └─ CustomUserDetailsService.java
-    │           └─ service/
-    │               ├─ AuthService.java
-    │               ├─ CategoryService.java
-    │               ├─ ProductService.java
-    │               └─ OrderService.java
-    │
-    └─ resources/
-       └─ application.yml
+└─ main/
+   ├─ java/
+   │  └─ com/
+   │     └─ example/
+   │        └─ newsletter/
+   │           ├─ NewsletterApplication.java
+   │           │
+   │           ├─ config/
+   │           │   ├─ SecurityConfig.java
+   │           │   └─ OpenApiConfig.java
+   │           │
+   │           ├─ controller/
+   │           │   ├─ AuthController.java
+   │           │   ├─ ListController.java
+   │           │   ├─ SubscriberController.java
+   │           │   ├─ TemplateController.java
+   │           │   ├─ CampaignController.java
+   │           │   ├─ TrackingController.java
+   │           │   └─ AnalyticsController.java
+   │           │
+   │           ├─ dto/
+   │           │   ├─ AuthResponse.java
+   │           │   ├─ LoginRequest.java
+   │           │   ├─ RegisterRequest.java
+   │           │   ├─ ListRequest.java
+   │           │   ├─ SubscriberRequest.java
+   │           │   ├─ TemplateRequest.java
+   │           │   └─ CampaignRequest.java
+   │           │
+   │           ├─ entity/
+   │           │   ├─ Role.java
+   │           │   ├─ SubscriberStatus.java
+   │           │   ├─ CampaignStatus.java
+   │           │   ├─ MessageStatus.java
+   │           │   ├─ User.java
+   │           │   ├─ SubscriberList.java
+   │           │   ├─ Subscriber.java
+   │           │   ├─ Template.java
+   │           │   ├─ Campaign.java
+   │           │   └─ Message.java
+   │           │
+   │           ├─ exception/
+   │           │   ├─ ResourceNotFoundException.java
+   │           │   ├─ BadRequestException.java
+   │           │   └─ GlobalExceptionHandler.java
+   │           │
+   │           ├─ repository/
+   │           │   ├─ UserRepository.java
+   │           │   ├─ ListRepository.java
+   │           │   ├─ SubscriberRepository.java
+   │           │   ├─ TemplateRepository.java
+   │           │   ├─ CampaignRepository.java
+   │           │   └─ MessageRepository.java
+   │           │
+   │           ├─ security/
+   │           │   ├─ JwtService.java
+   │           │   ├─ JwtAuthenticationFilter.java
+   │           │   ├─ CustomUserDetailsService.java
+   │           │   └─ UnsubscribeTokenService.java
+   │           │
+   │           └─ service/
+   │               ├─ AuthService.java
+   │               ├─ ListService.java
+   │               ├─ SubscriberService.java
+   │               ├─ TemplateService.java
+   │               ├─ CampaignService.java
+   │               ├─ EmailSendingService.java
+   │               ├─ CampaignWorkerService.java
+   │               ├─ CampaignScheduler.java
+   │               └─ TrackingService.java
+   │
+   └─ resources/
+      └─ application.yml
